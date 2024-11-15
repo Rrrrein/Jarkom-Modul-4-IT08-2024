@@ -5,13 +5,6 @@
 | Irfan Qobus Salim | 5027221058 |
 | Aisha Ayya Ratiandari | 5027231056 |
 
-## GNS3 / CIDR
-## TOPOLOGI
-![Screenshot 2024-11-13 012515](https://github.com/user-attachments/assets/1994f60a-8f4c-4b6b-8949-5fde5c979a6c)
-
-## PERHITUNGAN SUBNET
-### Class A
-![toponet](https://github.com/user-attachments/assets/24dfe142-4d6a-4e8b-a3be-2f749e71038b)
 | Nama Subnet           | Rute                                                         | Jumlah IP | Netmask |
 |-----------------------|--------------------------------------------------------------|-----------|---------|
 | A1                    | Hololive - Holo-EN                                           | 2         | /30     |
@@ -38,6 +31,37 @@
 | A22                   | holoh3ro - Switch8 - Zeta--(81_HOST) - Kaela--(71_HOST) - Kobo--(146_HOST) | 299 | /23 |
 | **Total**             |                                                              | **4263**  | **/19** |
 
+## GNS3 / CIDR
+## TOPOLOGI
+![Screenshot 2024-11-13 012515](https://github.com/user-attachments/assets/1994f60a-8f4c-4b6b-8949-5fde5c979a6c)
+
+### Penggabungan
+Pembagian 1
+![gabung1](https://github.com/user-attachments/assets/17b0b1a3-01ba-45aa-87ab-49585d57c164)
+
+Pembagian 2
+![gabung2](https://github.com/user-attachments/assets/13851991-1201-49fd-938f-6add06cc09df)
+
+Pembagian 3
+![gabung3](https://github.com/user-attachments/assets/c0cda4e1-675f-4f40-a898-1df180a2f2c4)
+
+Pembagian 4
+![gabung4](https://github.com/user-attachments/assets/b670a59d-0cab-487e-a502-0f64423f99d9)
+
+Pembagian 5
+![gabung5](https://github.com/user-attachments/assets/84fd6591-350f-4ab3-a840-2d7ff740921a)
+
+Pembagian 6
+![gabung6](https://github.com/user-attachments/assets/674147fa-2a46-4526-a9c9-d6163e770dd6)
+
+Pembagian 7
+![gabung7](https://github.com/user-attachments/assets/954b693b-d721-4d99-8fbe-ce364bf5ed1a)
+
+Pembagian 8
+![gabung8](https://github.com/user-attachments/assets/1da3387e-a523-4fd4-b663-841e828ab029)
+
+Pembagian 9
+![gabung9](https://github.com/user-attachments/assets/97b51dea-a724-4178-9f16-f77c70998ba6)
 
 
 
