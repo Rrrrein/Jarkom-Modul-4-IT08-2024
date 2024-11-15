@@ -98,6 +98,11 @@ Pembagian 9
 Pembagian 10
 ![gabung10](https://github.com/user-attachments/assets/32278479-76cc-41c5-9911-35368295b7ee)
 
+### Tree CIDR
+![cidr ayya](https://github.com/user-attachments/assets/71053e98-048d-4e94-8b4c-b087441cbdbb)
+
+
+
 
 
 
