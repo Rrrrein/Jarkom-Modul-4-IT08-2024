@@ -11,7 +11,7 @@
 |-----------------------|--------------------------------------------------------------|-----------|---------|
 | A1                    | Hololive - Holo-EN                                           | 2         | /30     |
 | A2                    | Holo-EN - Holo-Myth                                          | 2         | /30     |
-| A3                    | Holo-Myth - Switch2 - Kiara_Calli--(193_HOST)                | 503       | /23     |
+| A3                    | Holo-Myth - Switch2 - Kiara_Calli--(193_HOST) - Gura_Ame_Ina--(309_HOST) | 503       | /23     |
 | A4                    | Holo Myth - HoloPromise - Project-Hope - HoloCouncil         | 3         | /29     |
 | A5                    | Project-Hope - Irys--(2_HOST)                                | 3         | /29     |
 | A6                    | Holo-Council - Switch4 - Kronii_Mumei--(39_HOST) - Bae-Fauna--(22_HOST) | 62 | /26 |
@@ -34,7 +34,7 @@
 | **Total**             |                                                              | **4263**  | **/19** |
 
 ## CPT / VLSM
-**Topologi**
+### Topologi
 ![test](https://github.com/user-attachments/assets/b5292789-9da2-4973-afc7-b1f8b5bdded5)
 
 ### Pembagian IP - VLSM
