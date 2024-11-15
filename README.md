@@ -90,10 +90,15 @@ Pembagian 7
 ![gabung7](https://github.com/user-attachments/assets/954b693b-d721-4d99-8fbe-ce364bf5ed1a)
 
 Pembagian 8
-![gabung8](https://github.com/user-attachments/assets/1da3387e-a523-4fd4-b663-841e828ab029)
+![gabung9](https://github.com/user-attachments/assets/6ba73f97-40b7-485b-8422-6d92907eecd7)
 
 Pembagian 9
-![gabung9](https://github.com/user-attachments/assets/97b51dea-a724-4178-9f16-f77c70998ba6)
+![gabung8](https://github.com/user-attachments/assets/ae97eaa2-f6f8-40ad-9a00-0fb9f54d84d2)
+
+Pembagian 10
+![gabung10](https://github.com/user-attachments/assets/32278479-76cc-41c5-9911-35368295b7ee)
+
+
 
 
 
