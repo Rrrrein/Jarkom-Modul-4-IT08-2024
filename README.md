@@ -64,39 +64,48 @@
 | A21    | 192.237.19.104 | 255.255.255.252 | 192.237.19.107 | 192.237.19.105 - 192.237.19.106 |
 
 ## GNS3 / CIDR
-## TOPOLOGI
+### TOPOLOGI
 ![Screenshot 2024-11-13 012515](https://github.com/user-attachments/assets/1994f60a-8f4c-4b6b-8949-5fde5c979a6c)
 
 ### Penggabungan
-Pembagian 1
+1. Penggabungan 1
 ![gabung1](https://github.com/user-attachments/assets/17b0b1a3-01ba-45aa-87ab-49585d57c164)
 
-Pembagian 2
+2. Pembagian 2
 ![gabung2](https://github.com/user-attachments/assets/13851991-1201-49fd-938f-6add06cc09df)
+![zgabung1](https://github.com/user-attachments/assets/c05fae0b-d023-4313-a0ae-fb960eea3598)
 
-Pembagian 3
+3. Pembagian 3
 ![gabung3](https://github.com/user-attachments/assets/c0cda4e1-675f-4f40-a898-1df180a2f2c4)
+![zgabung2](https://github.com/user-attachments/assets/2a936ef0-d61c-4c28-ac48-16a40800c215)
 
-Pembagian 4
+4. Pembagian 4
 ![gabung4](https://github.com/user-attachments/assets/b670a59d-0cab-487e-a502-0f64423f99d9)
+![zgabung3](https://github.com/user-attachments/assets/11848333-2bd9-4403-a021-d8a026f7b25d)
 
-Pembagian 5
+5. Pembagian 5
 ![gabung5](https://github.com/user-attachments/assets/84fd6591-350f-4ab3-a840-2d7ff740921a)
+![zgabung4](https://github.com/user-attachments/assets/7f7d20f1-e17b-4aa3-8bb5-783346aa1484)
 
-Pembagian 6
+6. Pembagian 6
 ![gabung6](https://github.com/user-attachments/assets/674147fa-2a46-4526-a9c9-d6163e770dd6)
+![zgabung5](https://github.com/user-attachments/assets/b0b5265f-494b-41fd-944a-7a09af853660)
 
-Pembagian 7
+7. Pembagian 7
 ![gabung7](https://github.com/user-attachments/assets/954b693b-d721-4d99-8fbe-ce364bf5ed1a)
+![zgabung6](https://github.com/user-attachments/assets/5e6460a0-2790-44a2-9bf9-5083d45bc00b)
 
-Pembagian 8
+8. Pembagian 8
 ![gabung9](https://github.com/user-attachments/assets/6ba73f97-40b7-485b-8422-6d92907eecd7)
+![zgabung7](https://github.com/user-attachments/assets/1a27e545-6be2-48a1-baf3-9a22395ef793)
 
-Pembagian 9
+9. Pembagian 9
 ![gabung8](https://github.com/user-attachments/assets/ae97eaa2-f6f8-40ad-9a00-0fb9f54d84d2)
+![zgabung8](https://github.com/user-attachments/assets/5318e8d9-1c30-40ea-8bda-217b6a36c5c9)
 
-Pembagian 10
+10. Pembagian 10
 ![gabung10](https://github.com/user-attachments/assets/32278479-76cc-41c5-9911-35368295b7ee)
+![zgabung9](https://github.com/user-attachments/assets/bae38709-269a-4b7b-8409-30d8236fd0bb)
 
 ### Tree CIDR
 ![cidr ayya](https://github.com/user-attachments/assets/71053e98-048d-4e94-8b4c-b087441cbdbb)
