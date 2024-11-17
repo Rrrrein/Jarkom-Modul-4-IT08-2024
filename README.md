@@ -137,6 +137,642 @@
 | A21    | 192.237.138.0    | 255.255.255.252   | 192.237.138.3   | 192.237.138.1 - 192.237.138.2    |
 | A22    | 192.237.136.0    | 255.255.254.0     | 192.237.137.255 | 192.237.136.1 - 192.237.136.254  |
 
+### Konfigurasi
+1. Hololive (Getaway)
+
+```
+auto lo
+iface lo inet loopback
+
+auth eth0
+iface eth0 inet dhcp
+
+#A1
+auto eth1
+iface eth1 inet static
+	address 192.238.16.1 #range IP A1
+	netmask 255.255.255.252
+
+#A16
+auto eth2
+iface eth1 inet static
+	address 192.237.160.1 
+	netmask 255.255.255.252
+
+#A9
+auto eth3
+iface eth1 inet static
+	address 192.237.64.1
+	netmask 255.255.255.252
+```
+
+2. Holo-EN (Getaway)
+
+```
+auto lo
+iface lo inet loopback
+
+#A1
+auto eth0
+iface eth1 inet static
+	address 192.238.16.2 #IP range sisa A1
+	netmask 255.255.255.252
+	getaway 192.238.16.1 #IP address Hololive
+
+#A2
+auto eth1
+iface eth1 inet static
+	address 192.237.4.1
+	netmask 255.255.255.252
+
+#A7
+auto eth2
+iface eth1 inet static
+	address 192.238.8.33
+	netmask 255.255.255.252
+```
+
+3. Holo-Myth (Getaway)
+
+```
+auto lo
+iface lo inet loopback
+
+#A2
+auto eth0
+iface eth1 inet static
+	address 192.238.4.2
+	netmask 255.255.255.252
+	getaway 192.237.4.1 #IP address Holo-EN
+
+#A3
+auto eth1
+iface eth1 inet static
+	address 192.238.0.1
+	netmask 255.255.254.0
+
+#A4
+auto eth2
+iface eth1 inet static
+	address 192.238.2.129
+	netmask 255.255.255.248
+```
+
+4. Gura_Ame_Ina (Client)
+
+```
+#A3
+auto eth0
+iface eth1 inet static
+	address 192.238.0.2
+	netmask 255.255.254.0
+	getaway 192.238.0.1 #IP address Holo-Myth
+```
+
+5. Kiara_Calli (Client)
+
+```
+#A3
+auto eth0
+iface eth1 inet static
+	address 192.238.0.3
+	netmask 255.255.254.0
+	getaway 192.238.0.1 #IP address Holo-Myth
+```
+
+6. Project-Hope (Getaway)
+
+```
+auto lo
+iface lo inet loopback
+
+#A4
+auto eth0
+iface eth1 inet static
+	address 192.238.2.130
+	netmask 255.255.255.248
+	getaway 192.238.2.129 #IP adress Holo-Myth
+
+#A5
+auto eth1
+iface eth1 inet static
+	address 192.238.2.65
+	netmask 255.255.255.252
+```
+
+7. Irys (Client)
+
+```
+#A5
+auto eth0
+iface eth1 inet static
+	address 192.238.2.66
+	netmask 255.255.255.252
+	getaway 192.238.2.65 #IP address Project-Hope
+```
+
+8. Holo-Council (Getaway)
+
+```
+auto lo
+iface lo inet loopback
+
+#A4
+auto eth0
+iface eth1 inet static
+	address 192.238.2.131
+	netmask 255.255.255.248
+	getaway 192.238.2.129 #IP adress Holo-Myth
+
+#A6
+auto eth1
+iface eth1 inet static
+	address 192.238.2.1
+	netmask 255.255.255.192
+```
+
+9. Kronii_Mumei (Client)
+
+```
+#A6
+auto eth0
+iface eth1 inet static
+	address 192.238.2.2
+	netmask 255.255.255.192
+	getaway 192.238.2.1 #IP address Holo-Council
+```
+
+10. Bae_Fauna (Client)
+
+```
+#A6
+auto eth0
+iface eth1 inet static
+	address 192.238.2.3
+	netmask 255.255.255.192
+	getaway 192.238.2.1 #IP address Holo-Council
+```
+
+11. HoloAdvent (Getaway)
+
+```
+auto lo
+iface lo inet loopback
+
+#A7
+auto eth0
+iface eth1 inet static
+	address 192.238.8.34
+	netmask 255.255.255.252
+	getaway 192.238.8.33 #IP address Holo-EN
+
+#A8
+auto eth1
+iface eth1 inet static
+	address 192.238.8.1
+	netmask 255.255.255.224
+```
+
+12. FuwaMoco (Client)
+
+```
+#A8
+auto eth0
+iface eth1 inet static
+	address 192.238.8.2
+	netmask 255.255.255.224
+	getaway 192.238.8.1 #IP address HoloAdvent
+```
+
+13. Shiori_Nerissa (Client)
+
+```
+#A8
+auto eth0
+iface eth1 inet static
+	address 192.238.8.3
+	netmask 255.255.255.224
+	getaway 192.238.8.1 #IP address HoloAdvent
+```
+
+14. Biboo (Client)
+
+```
+#A8
+auto eth0
+iface eth1 inet static
+	address 192.238.8.4
+	netmask 255.255.255.224
+	getaway 192.238.8.1 #IP address HoloAdvent
+```
+
+15. Holo-JP (Getaway)
+
+```
+auto lo
+iface lo inet loopback
+
+#A9
+auto eth0
+iface eth1 inet static
+	address 192.237.64.2
+	netmask 255.255.255.252
+	getaway 192.237.64.1 #IP address Hololive
+
+#A10
+auto eth1
+iface eth1 inet static
+	address 192.237.32.1
+	netmask 255.255.255.248
+```
+
+16. DEV_IS (Getaway)
+
+```
+auto lo
+iface lo inet loopback
+
+#A10
+auto eth0
+iface eth1 inet static
+	address 192.237.32.2
+	netmask 255.255.255.248
+	getaway 192.237.32.1 #IP address Holo-JP
+
+#A11
+auto eth1
+iface eth1 inet static
+	address 192.237.16.1
+	netmask 255.255.255.240
+```
+
+17. Ririka_Raden (Client)
+
+```
+#A11
+auto eth0
+iface eth1 inet static
+	address 192.237.16.2
+	netmask 255.255.255.240
+	getaway 192.237.16.1 #IP address DEV_IS
+```
+
+18. Ao (Client)
+
+```
+#A11
+auto eth0
+iface eth1 inet static
+	address 192.237.16.3
+	netmask 255.255.255.240
+	getaway 192.237.16.1 #IP address DEV_IS
+```
+
+19. Hajime_Kanade (Client)
+
+```
+#A11
+auto eth0
+iface eth1 inet static
+	address 192.237.16.4
+	netmask 255.255.255.240
+	getaway 192.237.16.1 #IP address DEV_IS
+```
+
+20. GEN:0 (Getaway)
+
+```
+auto lo
+iface lo inet loopback
+
+#A10
+auto eth0
+iface eth1 inet static
+	address 192.237.32.3
+	netmask 255.255.255.248
+	getaway 192.237.32.1 #IP address Holo-JP
+
+#A12
+auto eth1
+iface eth1 inet static
+	address 192.237.0.1
+	netmask 255.255.248.0
+```
+
+21. MiComet (Client)
+
+```
+#A12
+auto eth0
+iface eth1 inet static
+	address 192.237.0.2
+	netmask 255.255.248.0
+	getaway 192.237.0.1 #IP address GEN:0
+```
+
+22. Sora_Robo_AZKi (Client)
+
+```
+#A12
+auto eth0
+iface eth1 inet static
+	address 192.237.0.3
+	netmask 255.255.248.0
+	getaway 192.237.0.1 #IP address GEN:0
+```
+
+23. GEN:1 (Getaway)
+
+```
+auto lo
+iface lo inet loopback
+
+#A12
+auto eth0
+iface eth1 inet static
+	address 192.237.0.4
+	netmask 255.255.248.0
+	getaway 192.237.0.1 #IP address GEN:0
+
+#A14 - MEMBERS
+auto eth1
+iface eth1 inet static
+	address 192.237.8.1
+	netmask 255.255.254.0
+
+#A13 - GAMERS
+auto eth2
+iface eth1 inet static
+	address 192.237.10.129
+	netmask 255.255.255.252
+```
+
+24. GAMERS (Getaway)
+
+```
+auto lo
+iface lo inet loopback
+
+#A13 - GEN:1
+auto eth0
+iface eth1 inet static
+	address 192.237.10.130
+	netmask 255.255.255.252
+	getaway 192.237.10.129 #IP address GEN:1
+
+#A15
+auto eth1
+iface eth1 inet static
+	address 192.237.10.1
+	netmask 255.255.255.128
+```
+
+25. Korone (Client)
+
+```
+#A15
+auto eth0
+iface eth1 inet static
+	address 192.237.10.2
+	netmask 255.255.255.128
+	getaway 192.237.10.1 #IP address GAMERS
+```
+
+26. Okayu (Client)
+
+```
+#A15
+auto eth0
+iface eth1 inet static
+	address 192.237.10.3
+	netmask 255.255.255.128
+	getaway 192.237.10.1 #IP address GAMERS
+```
+
+27. Mio (Client)
+
+```
+#A15
+auto eth0
+iface eth1 inet static
+	address 192.237.10.4
+	netmask 255.255.255.128
+	getaway 192.237.10.1 #IP address GAMERS
+```
+
+28. FBK_Matsuri (Client)
+
+```
+#A14
+auto eth0
+iface eth1 inet static
+	address 192.237.8.2
+	netmask 255.255.254.0
+	getaway 192.237.8.1 #IP address GEN:1
+```
+
+29. Aki_Hachama (Client)
+
+```
+#A14
+auto eth0
+iface eth1 inet static
+	address 192.237.8.2
+	netmask 255.255.254.0
+	getaway 192.237.8.1 #IP address GEN:1
+```
+
+30. Holo-ID (Getaway)
+
+```
+auto lo
+iface lo inet loopback
+
+#A16
+auto eth0
+iface eth1 inet static
+	address 192.237.160.2
+	netmask 255.255.255.252
+	getaway 192.237.160.1 #IP address Hololive
+
+#A17
+auto eth1
+iface eth1 inet static
+	address 192.237.132.1
+	netmask 255.255.255.252
+
+#A19
+auto eth2
+iface eth1 inet static
+	address 192.237.144.65
+	netmask 255.255.255.252
+	
+#A21
+auto eth3
+iface eth1 inet static
+	address 192.237.138.0
+	netmask 255.255.255.252
+```
+
+31. AREA15 (Getaway)
+
+```
+auto lo
+iface lo inet loopback
+
+#A17
+auto eth0
+iface eth1 inet static
+	address 192.237.132.2
+	netmask 255.255.255.252
+	getaway 192.237.132.1 #IP address Holo-ID
+	
+#A18
+auto eth1
+iface eth1 inet static
+	address 192.237.128.1
+	netmask 255.255.252.0
+```
+
+32. Risu (Client)
+
+```
+#A18
+auto eth0
+iface eth1 inet static
+	address 192.237.128.2
+	netmask 255.255.252.0
+	getaway 192.237.128.1 #IP address AREA15
+```
+
+33. Moona (Client)
+
+```
+#A18
+auto eth0
+iface eth1 inet static
+	address 192.237.128.3
+	netmask 255.255.252.0
+	getaway 192.237.128.1 #IP address AREA15
+```
+
+34. lofi (Client)
+
+```
+#A18
+auto eth0
+iface eth1 inet static
+	address 192.237.128.4
+	netmask 255.255.252.0
+	getaway 192.237.128.1 #IP address AREA15
+```
+
+35. holoro (Getaway)
+
+```
+auto lo
+iface lo inet loopback
+
+#A19
+auto eth0
+iface eth1 inet static
+	address 192.237.144.66
+	netmask 255.255.255.252
+	getaway 192.237.132.1 #IP address Holo-ID
+
+#A20
+auto eth1
+iface eth1 inet static
+	address 192.237.144.1
+	netmask 255.255.255.192
+```
+
+36. Ollie (Client)
+
+```
+#A20
+auto eth0
+iface eth1 inet static
+	address 192.237.144.2
+	netmask 255.255.255.192
+	getaway 192.237.144.1 #IP address holoro
+```
+
+37. Anya (Client)
+
+```
+#A20
+auto eth0
+iface eth1 inet static
+	address 192.237.144.3
+	netmask 255.255.255.192
+	getaway 192.237.144.1 #IP address holoro
+```
+
+38. Reina (Client)
+
+```
+#A20
+auto eth0
+iface eth1 inet static
+	address 192.237.144.4
+	netmask 255.255.255.192
+	getaway 192.237.144.1 #IP address holoro
+```
+
+39. holoh3ro (Getaway)
+
+```
+auto lo
+iface lo inet loopback
+
+#A21
+auto eth0
+iface eth1 inet static
+	address 192.237.138.1
+	netmask 255.255.255.252
+	getaway 192.237.132.1 #IP address Holo-ID
+
+#A22
+auto eth0
+iface eth1 inet static
+	address 192.237.136.1
+	netmask 255.255.254.0
+```
+
+40. Zeta (Client)
+
+```
+#A22
+auto eth0
+iface eth1 inet static
+	address 192.237.136.2
+	netmask 255.255.254.0
+	getaway 192.237.136.1 #IP address holoh3ro
+```
+
+41. Kaela (Client)
+
+```
+#A22
+auto eth0
+iface eth1 inet static
+	address 192.237.136.3
+	netmask 255.255.254.0
+	getaway 192.237.136.1 #IP address holoh3ro
+```
+
+42. Kobo (Client)
+
+```
+#A22
+auto eth0
+iface eth1 inet static
+	address 192.237.136.4
+	netmask 255.255.254.0
+	getaway 192.237.136.1 #IP address holoh3ro
+```
+
 
 
 
