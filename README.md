@@ -63,6 +63,12 @@
 | A19    | 192.237.19.100 | 255.255.255.252 | 192.237.19.103 | 192.237.19.101 - 192.237.19.102 |
 | A21    | 192.237.19.104 | 255.255.255.252 | 192.237.19.107 | 192.237.19.105 - 192.237.19.106 |
 
+### Tree VLSM
+![image](https://github.com/user-attachments/assets/af529d6e-1518-47bb-bf89-99b9cb608307)
+
+### Testing Revisi - CPT VLSM
+https://drive.google.com/file/d/13TTobOthT_bvFklVow5gwLow9cwsoHpW/view?usp=sharing
+
 ## GNS3 / CIDR
 ### TOPOLOGI
 ![Screenshot 2024-11-13 012515](https://github.com/user-attachments/assets/1994f60a-8f4c-4b6b-8949-5fde5c979a6c)
