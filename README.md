@@ -773,8 +773,9 @@ iface eth1 inet static
 	getaway 192.237.136.1 #IP address holoh3ro
 ```
 
-
-
+## Revisi
+1. CIDR
+   https://youtu.be/Xfkgv68063Y
 
 
 
